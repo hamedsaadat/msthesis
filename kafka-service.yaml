@@ -15,4 +15,4 @@
    selector:  
      app: kafka-app 
    type: LoadBalancer
-   loadBalancerIP: 156.17.41.49
+   loadBalancerIP: 10.104.32.223

@@ -30,10 +30,14 @@ spec:
         - name: ALLOW_ANONYMOUS_LOGIN
           value: "yes"
         - name: KAFKA_ADVERTISED_HOST_NAME
-          value: "156.17.41.49"
+          value: "10.104.32.223"
         - name: KAFKA_ZOOKEEPER_CONNECT
           value: "kafka-cluster:2181"
         - name: KAFKA_ADVERTISED_LISTENERS
-          value: "PLAINTEXT://156.17.41.49:2181"
+          value: "PLAINTEXT://10.104.32.223:2181"
+        - name: KAFKA_LOG_RETENTION_MS
+          value: "10000"
+        - name: KAFKA_LOG_RETENTION_CHECK_INTERVAL_MS
+          value: "5000"
 
 
