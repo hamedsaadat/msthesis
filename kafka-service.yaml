@@ -1,0 +1,18 @@
+ apiVersion: v1 
+ kind: Service 
+ metadata:  
+   labels:  
+     app: kafkaApp 
+   name: kafka-cluster
+   annotations:
+     metallb.universe.tf/allow-shared-ip: "1234"
+ spec:  
+   ports:  
+    - name: kafka-broker
+      port: 9092 
+      targetPort: 9092
+      protocol: TCP 
+   selector:  
+     app: kafka-app 
+   type: LoadBalancer
+   loadBalancerIP: 156.17.41.49
